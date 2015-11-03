@@ -14,7 +14,7 @@
 static void do_cat(const char *path);
 static void die(const char *s);
 
-int int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
   int i;
 
   if ( argc < 2 ){
