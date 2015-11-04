@@ -11,10 +11,10 @@ int main( int argc, char *argv[]){
 
     f = fopen( argv[i], "r" );
     if( !f ) {
-      perror(argc[i]);
+      perror(argv[i]);
       exit(1);
     }
-    while ( ( c = fget( f ) ) != EOF ) {
+    while ( ( c = fgetc( f ) ) != EOF ) {
       if ( putchar( c )  <  0 ) exit(1);
     }
     fclose( f );
